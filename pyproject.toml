@@ -1,0 +1,16 @@
+[project]
+name = "tabgns"
+version = "1.0.0"
+requires-python = ">=3.13"
+dependencies = [
+    "hydra-core",
+    "omegaconf",
+    "torch",
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "openml",
+    "tqdm",
+    "notebook",
+    "ipywidgets",
+]

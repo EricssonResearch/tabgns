@@ -1,0 +1,24 @@
+defaults:
+  - _self_
+
+general:
+  problem_type: 'classification'
+  stop_criteria: 'val_loss'
+  batch_size: 256
+  iters: 300
+  stop_patience: 20
+  weight_lr: 0.001
+  device: 'cpu'
+  seed: 42
+  dataset: 'higgs'
+
+search_space:
+  layer_widths: [256, 256]
+  activation: 'relu'
+
+tabgns:
+  temperature: 1.0
+  arch_lr: 0.05
+  gate_initialisation_val: -3
+  scale: true
+  pretrain: -1
